@@ -30,6 +30,7 @@ class Player
         warrior.rest!
       elsif warrior.feel.empty?
         warrior.walk!
+        change
       end
     end
     @health = warrior.health
